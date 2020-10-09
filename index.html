@@ -1,530 +1,366 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-
-    <title>Sushi | BARITO</title>
-
-    <link rel="shortcut icon" href="images/icon.png">
-
-    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>SUSHI Barito</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#menu" data-offset="50" class="position-relative">
-
-    <!--Background top parralax-->
-    <div class="bgTop d-none d-lg-block"></div>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
+        <nav class="navbar navbar-expand-md   navbar-dark  fixed-top" style="background: black;">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="logo restaurant sushi Barito">
+            </a>
 
-        <!--Menu haut de page-->
-        <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-            <div class="w-25">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo Sushi Barito"></a>
-            </div>
-
-            <!--Menu haut-->
-            <div class="collapse navbar-collapse justify-content-center order-3 order-lg-2" id="collapsibleNavbar">
-                <ul class="nav d-block d-lg-flex navbar-nav">
+            <!-- Links -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse font-weight-bolder" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto pr-5">
                     <li class="nav-item">
-                        <a class="nav-link" href="#Qualité">Qualité et service</a>
+                        <a class="nav-link" href="#qualitee">Qualité et service</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Jour">Menu du jour</a>
+                        <a class="nav-link" href="#menu">Menu du jour</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Historique">Historique</a>
+                        <a class="nav-link" href="#histoire">Historique</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Événements">Événements</a>
+                        <a class="nav-link" href="#eventos">Événements</a>
                     </li>
                 </ul>
             </div>
-
-            <!--Bouton pour menu haut-->
-            <div class="w-25 d-flex justify-content-end order-2 order-lg-3">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
+            <!-- Media hidden pour espace-->
+            <ul class="nav navbar-nav flex-row justify-content-center d-none d-lg-block pl-5">
+                <li class="nav-item invisible "><a class="nav-link" href=""><i class="fa fa-facebook "></i></a> </li>
+                <li class="nav-item invisible "><a class="nav-link" href=""><i class="fa fa-facebook "></i></a> </li>
+            </ul>
         </nav>
     </header>
 
-    <!--Contenu de la page-->
-    <main>
+<!-- Parallax-->
+    <div class="parallax d-none d-lg-block"></div>
 
-        <!--Boite 1: Bienvenue-->
-
+<!-- Bienvenue -->  
+        <div class="container mt-5 pt-3" >
+            <div class="row"  >
+                <div class=" col-12 col-lg-6">
+                    <div class="container  ">
+                        <div class="row pt-3" >
+                            <div class="col-12 col-md-6" >
+                                <div class="imagegeneral" id="image1bienvenue" ></div> 
+                            </div>
+                            <div class="col-12 col-md-6" >
+                                <div class="imagegeneral" id="image2bienvenue"></div>
+                                <div class="imagegeneral" id="image3bienvenue"></div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6" >
+                    <div class="container">
+                        <h1 class="mt-3 text-uppercase font-weight-bold text-dark">Bienvenue chez sushi Bariteau</h1>
+                        <h2 class=" fontsatisf pt-3">- Luxe & Qualitée -</h2>
+                        <p class="text-secondary  pt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, a expedita. Delectus aliquid 
+                            tenetur ratione, laboriosam repellendus iure iste vero?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, a expedita. Delectus aliquid 
+                            tenetur ratione, laboriosam repellendus iure iste vero?
+                            amet consectetur adipisicing elit. Voluptas, a expedita. De
+                        </p>
+                        <a class="liensavoir" href="#">EN SAVOIR PLUS</a>      
+                    </div> 
+                </div>
+            </div>
+        </div>
         
-        <div class="d-flex justify-content-center pt-5 mt-5 mt-lg-0">
-            <div class="container row">
-
-
-                <!--Images boite 1-->
-
-                <div class="col-12 col-lg-6 row d-flex align-items-center">
-                    <div class="col-12 col-md-6 pr-md-0">
-                        <img class="img-fluid" src="images/boite1-1.jpg" alt="Sushi">
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="mt-3 mb-3 mt-lg-0">
-                            <img class="img-fluid" src="images/boite1-2.jpg" alt="Sushi">
-                        </div>
-                        <div>
-                            <img class="img-fluid" src="images/boite1-3.jpg" alt="Sushi">
-                        </div>
-                    </div>
-                </div>
-
-                <!--Texte boite 1-->
-                <div class="col-12 col-lg-6 test4 pt-5 pb-5">
-                    <h1 class=" text-uppercase font-weight-bold">Bienvenue chez sushi Barito</h1>
-                    <h2 class="font font-weight-bold text-red">~ Luxe & Qualitée ~</h2>
-                    <br>
-                    <p class="text">Au cours des quatorze dernières années, la boutique de sushis s'est spécialisée dans
-                        la création de sushis, sashimis et autres spécialités japonaises.
-                        Préparés avec soin dans nos boutiques par notre propre équipe de chefs de sushis, nos produits
-                        offrent un goût exceptionnel, une fraîcheur supérieure, des bienfaits pour la santé et une
-                        expérience culinaire authentique.</p>
-                    <a href="#" class="savoirPlus text-muted">En savoir plus</a>
+<!--Qualitée de service--> 
+    <div id="qualitee" class="container-fluid" style="padding-top: 120px;">
+        <div class="row">
+            <div class="col-12 col-lg-6" style="padding: 0;" >
+                <div id="imageservice"> 
                 </div>
             </div>
-        </div>
-
-        <!--Boite 2: Description -->
-        <div id="Qualité" class="row m-0">
-            <div class="col-md-12 col-lg-5 col-xl-6  bgDescription"></div>
-            <div class="service col-md-12 col-lg-7 col-xl-6">
-                <div class="row bg-light py-5">
-                    <div class="col-md-6 text-center px-5">
-                        <i class="icon1 fas fa-utensils"></i>
-                        <h5 class="text-uppercase font-weight-bold">Service</h5>
-                        <span class="text">L’accueil aux clients est importante, car c’est la première impression, c'est
-                            pour quoi nos employés sont toujours là pour vous.</span>
+            <div class="col-12 col-lg-6 bg-light text-center d-flex flex-column justify-content-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="p-4">  
+                            <i  class="iconcolor fas fa-utensils fa-4x pb-4"></i>
+                            <h5 class="font-weight-bold text-uppercase py-2">SERvICE</h5>
+                            <p class="  text-muted " >Lorem ipsuOptio , quaerat laborum quaerat laborum numquam praesentium odio earum quasi </p>  
+                        </div>
+                        <div class="p-4">
+                            <i class="iconcolor fas fa-wine-glass fa-4x pb-4"></i> 
+                            <h5 class="font-weight-bold text-uppercase py-2">Bon Vin</h5>
+                            <p class="text-muted" >Lorem ipsum dolo , quaerat laborum  quaerat laborum numquam praesentium odio earum quasi  </p>  
+                        </div>   
                     </div>
-                    <div class="col-md-6 text-center px-5">
-                        <i class="icon1 fas fa-leaf"></i>
-                        <h5 class="text-uppercase  font-weight-bold">Fraîcheur</h5>
-                        <span class="text">La qualité est primordiale, notre équipe utilise des ingrédients fraîs pour
-                            créer des mets uniques pour tous vos repas!</span>
-                    </div>
-                    <div class="col-md-6 text-center px-5">
-                        <i class="icon1 fas fa-wine-glass"></i>
-                        <h5 class=" text-uppercase  font-weight-bold">Bon vin</h5>
-                        <span class="text">Cette cuvée est une découverte sympathique, vin simple mais croquant et très
-                            digeste. La fraîcheur des fruits rouges et les notes végétales sont agréables.</span>
-                    </div>
-                    <div class="col-md-6 text-center px-5">
-                        <i class="icon1 fas fa-ice-cream"></i>
-                        <h5 class="text-uppercase  font-weight-bold">Dessert</h5>
-                        <span class="text">Le dessert est probablement l'étape la plus importante du repas, car ce sera
-                            la dernière chose dont vos invités se souviendront avant de s'évader sur la table.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Boite 3: Spécialités -->
-        <div id="Jour">
-            <div class="container my-5">
-                <div class="justify-content-center mb-3 position-relative">
-                    <h2 class="text-uppercase text-red text-center">spécialité du jour</h2>
-                    <div id="ScriptDate"></div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-6">
-                        <div class="d-flex justify-content-between pb-2">
-                            <h3 class="font font-weight-bold">Assiete de sushi</h3>
-                            <i class="icon2 fas fa-fish"></i>
+                    <div class="col-md-6">
+                        <div class="p-4">
+                            <i class="iconcolor fas fa-seedling fa-4x pb-4"></i>
+                            <h5 class="font-weight-bold text-uppercase py-2">Fraîcheur</h5>
+                            <p class="text-muted">Lorem ipsum dolor,quaerat laborum  quaerat laborum numquam praesentium odio earum quasi </p>   
                         </div>
-                        <div class="d-flex">
-                            <span>Super Zuppa Toscana</span>
-                            <div class="points"></div><span>&#36;40</span>
-                        </div>
-                        <p class="ingredient">Poulet / Endives / Céleri / Thon</p>
-                        <div class="d-flex">
-                            <span>Super Rippa Costa</span>
-                            <div class="points"></div><span>&#36;40</span>
-                        </div>
-                        <p class="ingredient">Poulet / Endives / Céleri / Thon</p>
-                        <div class="d-flex">
-                            <span>Hyper avio</span>
-                            <div class="points"></div><span>&#36;40</span>
-                        </div>
-                        <p class="ingredient"><span data-toggle="tooltip"
-                                title="Pâte sucrée de haricots rouges.">Anko</span> / Endives / Céleri / Thon</p>
-                        <div class="d-flex">
-                            <span>Le foubraque</span>
-                            <div class="points"></div><span>&#36;40</span>
-                        </div>
-                        <p class="ingredient">Poulet / Endives / Céleri / Thon</p>
-                    </div>
-
-                    <!--Les type de vins-->
-                    <div class="col-12 col-lg-6">
-                        <div>
-                            <div class="d-flex justify-content-between pb-2">
-                                <h3 class="font font-weight-bold">Vins</h3>
-                                <i class="icon2 fas fa-wine-glass"></i>
-                            </div>
-                            <div class="d-flex">
-                                <span>Attems Tribes Collio 2017</span>
-                                <div class="points"></div><span>&#36;40</span>
-                            </div>
-                            <p class="ingredient">Ribolla gialla / Vin blanc / Italien</p>
-                            <div class="d-flex">
-                                <span>Attems Tribes Collio 2018</span>
-                                <div class="points"></div><span>&#36;40</span>
-                            </div>
-                            <p class="ingredient">Ribolla gialla / Vin blanc / Italien</p>
-                        </div>
-
-                        <!--Les dessert 1-->
-                        <div>
-                            <div class="d-flex justify-content-between pb-2">
-                                <h3 class="font font-weight-bold">Dessert</h3>
-                                <i class="icon2 fas fa-ice-cream"></i>
-                            </div>
-                            <div class="d-flex pb-3">
-                                <span>Tarte double chocolat</span>
-                                <div class="points"></div><span>&#36;40</span>
-                            </div>
-                            <div class="d-flex">
-                                <span>Sushi dessert au fromage</span>
-                                <div class="points"></div><span>&#36;26</span>
-                            </div>
+                        <div class="p-4 " >
+                            <i class="iconcolor fas fa-ice-cream fa-4x pb-4"></i>
+                            <h5 class="font-weight-bold text-uppercase py-2" >Desserts</h5>
+                            <p class="text-muted">Lorem ipsum dio, quaerat laborum  quaerat laborum numquam praesentium odio earum quasi  </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!--Boite 4: Notre histoire-->
-        <div id="Historique">
-            <div class="row m-0 histoire bg-light">
-
-                <!--Texte boite 4-->
-                <div class="col-12 col-lg-6 order-2 order-lg-1 my-5">
-                    <div class="my-5">
-                        <h1 class="text-center font font-weight-bold text-red m-0">Notre histoire</h1>
-                        <div class="justify-content-center d-flex"><img src="images/border.png" alt="Ligne rouge"></div>
-                        <div class="justify-content-center d-flex m-lg-4 m-xl-5">
-                            <p class="pt-5 pt-lg-0 w-75 text-center text">
-                                Le restaurant a été ouvert en 2005, au cours des années nous nous sommes perfectionnés
-                                en confection des sushis.
-                                Notre but c’était d’amené cette culture japonaise au Québec et de la sublimé selon nos
-                                ressources.
-                            </p>
-                        </div>
-                        <p class="text-center m-0"><strong>Loïc, Mathis, Félix et Charlie</strong></p>
-                        <p class="text-center text">Propriétaires</p>
-                    </div>
-                </div>
-
-                <!--Images boite 4-->
-                <div class="col-12 col-lg-6 order-1 order-lg-2 bgHistoire"></div>
+<!--Menu du jour-->
+    <div class="container-fluid mt-5 pt-5" id="menu">
+    <div class="jumbotron text-center my-5">
+        <h1 >Spécialités du jour <br> under construction!!</h1> 
+        <img src="images/cones-.jpg" alt="Cone construction" style="max-width: 150px;">        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nostrum 
+                    praesentium libero quibusdam veniam consequuntur alias unde odit dolor repellat 
+                    fuga officia nesciunt accusantium illo omnis. Ipsa, voluptatum consequuntur enim
+                    provident laudantium dolorum vitae maxime minima id quam consectetur eligendi. 
+                    Soluta nam est modi perferendis ea minus eos laboriosam provident neque eligendi, 
+                    llo sed cupiditate voluptate iure optio, vero architecto mollitia ipsa. Laborum, 
+                </p> 
+            </div>
+            <div class="col-12 col-md-6">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nostrum 
+                    praesentium libero quibusdam veniam consequuntur alias unde odit dolor repellat 
+                    fuga officia nesciunt accusantium illo omnis. Ipsa, voluptatum consequuntur enim
+                    provident laudantium dolorum vitae maxime minima id quam consectetur eligendi. 
+                    Soluta nam est modi perferendis ea minus eos laboriosam provident neque eligendi, 
+                    llo sed cupiditate voluptate iure optio, vero architecto mollitia ipsa. Laborum, 
+                </p> 
             </div>
         </div>
-
-        <!--Boite 5: Événements-->
-        <div id="Événements">
-            <div class="mb-5">
-                <h1 class="text-center">Nos prochains événements</h1>
-                <h2 class="font text-center text-red">~Soyez des nôtres!~</h2>
+    </div>  
+    </div> 
+    
+    <!--<div  class="container" id="menu" style="padding-top: 100px;" >
+        <div class="text-center">
+            <div class="my-5 row justify-content-between"  >
+                <div class=" d- " style="border: red 1PX solid;"> 12-12-2121</div>
+                <h1 class="text-center" style="border: red 1PX solid;" >Spécialités du jour</h1> 
+                <div class="fecha " style="border: red 1PX solid;"> 12-12-2121</div>
             </div>
-            <div class="row m-auto container">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="overFlow">
-                        <img class="img-fluid zoomImg" src="images/country.jpg" alt="country">
-                        <div class="dateBoite position-absolute">
-                            <p class="text-center jours m-0">20</p>
-                            <p class="text-center mois m-0">Juin</p>
-                        </div>
-                    </div>
-                    <div class="p-5 border boiteText">
-                        <h5 class="text-uppercase font-weight-bold pb-2">Soiré country</h5>
-                        <p class="text">Bienvenue dans le Far West avec notre SOIRÉE THÉMATIQUE WESTERN au Québec!</p>
-                        <a href="#" class="savoirPlus text-muted">En savoir plus</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="overFlow">
-                        <img class="img-fluid zoomImg" src="images/dansante.jpg" alt="Soiré dansante">
-                        <div class="dateBoite dateLigne position-absolute">
-                            <p class="text-center jours m-0">16</p>
-                            <p class="text-center mois m-0">Juil.</p>
-                        </div>
-                    </div>
-                    <div class="p-5 border boiteText">
-                        <h5 class="text-uppercase font-weight-bold pb-2">Soiré dansante</h5>
-                        <p class="text">Durant notre soirées dansantes nous avons plusieurs musiques différentes, tel
-                            que la musiques des années 80!</p>
-                        <a href="#" class="savoirPlus text-muted">En savoir plus</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mt-md-4 mt-lg-0">
-                    <div class="overFlow">
-                        <img class="img-fluid zoomImg" src="images/degustation.jpg" alt="Soiré dansante">
-                        <div class="dateBoite dateLigne position-absolute">
-                            <p class="text-center jours m-0">10</p>
-                            <p class="text-center mois m-0">Sept.</p>
-                        </div>
-                    </div>
-                    <div class="p-5 border boiteText">
-                        <h5 class="text-uppercase font-weight-bold pb-2">Dégustion gratuites</h5>
-                        <p class="text">Découvrer nos nouvelles créations à chaque fin de semaine et expérimenté les
-                            saveurs unique de nos sushis.</p>
-                        <a href="#" class="savoirPlus text-muted">En savoir plus</a>
-                    </div>
-                </div>
-            </div>
+                      
         </div>
 
-        <!--Boite 6: Insta-->
-        <h4 class="text-center text-uppercase font-weight-bold m-5">~Suivez notre insta~</h4>
-
-        <!--Carousel bas de page-->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-            <!--Indicateur carousel-->
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <!--images insta foncé carousel-->
-                    <div class="row">
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta1.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta2.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta3.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta4.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta5.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta6.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row" style="border: red 1PX solid;" >
+                <div class="col-6 pr-5 container" style="border: red 1PX solid;">
+                    <div class="titulo d-flex justify-content-between ">
+                        <h4 class="listasmenu ">Assiettes de sushi</h4>
+                        <i class="fas fa-fish fa-2x pr-3"></i>
                     </div>
+                    
+                    <div class="  ">Super Zuppa Toscana.....................................................................................$40</div>
+                    <p>Poulet / Endives / Céleri / Thon</p>
+                    <div>Super Rippa Costa...........................................................................................$40</div>
+                    <p>Poulet / Endives / Céleri / Thon</p>
                 </div>
-                <div class="carousel-item">
-
-                    <!--images insta claire carousel-->
-                    <div class="row">
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta7.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta8.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta9.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta10.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta11.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 col-lg-2 p-0 container">
-                            <img src="images/insta/insta12.jpg" class="d-block w-100 img-fluid" alt="image de sushi">
-                            <div class="overlay">
-                                <div class="icon">
-                                    <i class="p-1 far fa-heart f ScriptInsta"></i>
-                                    <i class="p-1 far fa-comment ScriptInsta"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-6 container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nostrum 
+                        praesentium libero quibusdam veniam consequuntur alias unde odit dolor repellat 
+                        fuga officia nesciunt accusantium illo omnis. Ipsa, voluptatum consequuntur enim
+                        provident laudantium dolorum vitae maxime minima id quam consectetur eligendi. 
+                        Soluta nam est modi perferendis ea minus eos laboriosam provident neque eligendi, 
+                        llo sed cupiditate voluptate iure optio, vero architecto mollitia ipsa. Laborum, 
+                    </p> 
                 </div>
             </div>
-
-            <!--Bouton gauche carousel-->
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-
-            <!--Bouton droite carousel-->
-
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </main>
-
-    <!--Bas de page-->
-    <footer class="bg-black container-fluid p-5">
-
-        <!--Logo bas de page-->
-        <div class="d-flex justify-content-center">
-            <img src="images/logo.png" alt="Image de sushi">
-        </div>
-
-        <!--3 boite bas de page-->
-        <div class="row mt-5">
-
-            <!--Boite bas 1: Propos-->
-            <div class="col-12 col-md-4 text-center px-5">
-                <p class="text-uppercase text-white">À propos de nous </p>
-                <span class="text-secondary">Nous sommes un restaurant qui porpose des sushi authentiques et rempli
-                    saveurs.</span>
-            </div>
-
-            <!--Boite bas 2: Courriel-->
-            <div class="col-12 col-md-4 text-center my-sm-5 m-md-0">
-                <p class="text-uppercase text-white">obtenez des offrees et nouvelles</p>
-
-                <!--Boite courriel-->
-                <div class="input-group">
-                    <input placeholder="Entrez votre courriel" class="form-control" id="email" name="email" />
-                    <div class="Mail py-2 px-3">
-                        <i class="fa fa-envelope-o"></i>
-                    </div>
-                </div>
-
+        </div>  
+        </div> -->
+    
+         
+<!--Notre histoire-->
+    <div class="container-fluid" id="histoire" style="padding-top: 120px;">
+        <div class="row bg-light">
+            <div class="col-12 order-1 col-lg-6 order-lg-0 bg-light text-center d-flex flex-column justify-content-between">
                 <div>
-                    <a href="#" class="fab fa-twitter text-secondary iconMail"></a>
-                    <a href="#" class="fab fa-facebook-f text-secondary iconMail"></a>
-                    <a href="#" class="fab fa-linkedin text-secondary iconMail"></a>
-                    <a href="#" class="fab fa-instagram text-secondary iconMail"></a>
+                    <h1 class="fontsatisf display-4 mt-5 mb-n2">Notre histoire</h1>
+                    <img src="images/border.png"  alt="border bottom red" >
+                </div>
+                <div class="container text-mute ">
+                    <p >
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium officiisLorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Accusantium officii beatae fugiat molestias eaque, corrupti tenetur, sunt
+                        earum illo ab provident voluptatem omnis dolore quidem maxime necessitatibus. Atque, nesciunt ut.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium officiisLorem met
+                    </p>
+                </div>
+                <div class="mb-4">
+                    <span class=" font-weight-bold d-block">Loïc, Mathis, Féelix et Charlie</span>
+                    <span class="text-muted pb-2">Propiétaires</span>
                 </div>
             </div>
+            <div class="col-12 col-lg-6">
+                <div id="imagenotrehistoire"></div>
+            </div>
+        </div>
+    </div>
 
-            <!--Boite bas 3: Adresse-->
-            <div class="col-12 col-md-4 text-center">
-                <p class="text-uppercase text-white">Notre adresse</p>
-                <span class="text-secondary">30 Boulevard du séminaire N.</span>
-                <br>
-                <span class="text-secondary">Saint-Jean-Sur-Richelieu</span>
-                <br>
-                <span class="text-secondary">QC, J3B 5J4</span>
-                <br>
-                <span class="text-secondary">450-555-5555</span>
+<!--Évenements
+    -->
+    <div class="container-fluid" id="eventos" style="padding-top: 60px;">
+        <div class="container">
+            <div class=" text-center my-4 p-5">
+                <h1 class=" text-uppercase font-weight-bold text-dark mt-4">Nos prochains événements</h1>
+                <h3 class="fontsatisf font-weight-bold pt-2">-Soyez des nôtres!-</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4  py-3"> 
+                    <div class="photosevent ">
+                        <div class="hover01 column">
+                            <div>
+                                <figure><img class="img-fluid" src="images/Guitar.jpg" alt="Person playing guitar"></figure>
+                            </div>
+                        </div>
+                        <div class="text-center calendario">
+                            <div class="bordeblanco">
+                                <span class=" font-weight-bold" style="font-size: 36px;line-height: 40px;font-weight: 700;">20</span>
+                                <span class=" text-uppercase" style="font-size: 18px;">juin </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-5 pt-3 border">
+                        <h6 class="text-uppercase font-weight-bold mt-4">Soirée country</h6>
+                        <div class=" text-muted my-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, excepturi!  
+                            consectetur adipisicing elit. Dolorem. 
+                        </div>
+                        <a class="liensavoir" href="#">EN SAVOIR PLUS</a> 
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 py-3">
+                    <div class="photosevent">
+                        <div class="hover01 column">
+                            <div>
+                                <figure><img class="img-fluid" src="images/Party.jpg" alt="Persons dancing "></figure>
+                            </div>
+                        </div>
+                        <div class="text-center calendario">
+                            <div class="bordeblanco">
+                                <span class=" font-weight-bold " style="font-size: 36px;line-height: 40px;font-weight: 700;">16</span>
+                                <span class=" text-uppercase " style="font-size: 18px;">juil.</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-5 pt-3 border">
+                        <h6 class="text-uppercase font-weight-bold mt-4">Soirée dansante</h6>
+                        <div class=" text-muted my-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, excepturi!
+                            consectetur adipisicing elit. Dolorem.
+                        </div>
+                        <a class="liensavoir " href="#">EN SAVOIR PLUS</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 py-3">
+                    <div class="photosevent">
+                        <div class="hover01 column">
+                            <div>
+                                <figure><img class="img-fluid" src="images/degustacion.jpg" alt="different types of sushi "></figure>
+                            </div>
+                        </div>
+                        <div class="text-center calendario">
+                            <div class="bordeblanco">
+                                <span class=" font-weight-bold " style="font-size: 36px;line-height: 40px;font-weight: 700;">10</span>
+                                <span class=" text-uppercase " style="font-size: 18px; ">sept. </span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-5 pt-3 border">
+                        <h6 class="text-uppercase font-weight-bold mt-4">Dégustations gratuit...</h6>
+                        <div class=" text-muted my-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, excepturi!  
+                            consectetur adipisicing elit. Dolorem. 
+                        </div>
+                        <a class="liensavoir" href="#">EN SAVOIR PLUS</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Instagram-->
+    <article>
+        <div class="container-fluid h-50" style="padding-top: 50px;">
+            <h3 class="text-center py-4">SUIVEZ NOTRE INSTA (under construction!!)</h3>
+            <div class="jumbotron jumbotron-fluid text-center"> Carrousel de photos</div>
+        </div>
+    </article>
+    
+<!--Footer -->
+    <footer >
+        <div class="container-fluid pt-4   text-white" style="background: black;">
+            <div class=" text-center p-4 mb-2">
+                <img src="images/logo.png" alt="Logo restaurant de sushi Bariteau">
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 col-md-3 my-2 pt-3">
+                        <h6 class="text-uppercase font-weight-bold pb-3">À propos de nous</h6>
+                        <div id="apropos" class="text-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quaerat, o consectetur animi quae off.
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 my-2 pt-3">
+                        <h6 class="text-uppercase font-weight-bold pb-3 ">Obtenez des offres et nouvelles</h6>
+                        <div class="correo input-group   mx-auto " style="max-width: 350px;">
+                            <input type="email" class="form-control datos " name="email" id="email" 
+                                placeholder="Entrez votre courriel">
+                            <span class="input-group-btn">
+                                <button type="button" class="emailbutton btn btn-outline-secondary" style="width: 70px;">
+                                    <i class="far fa-envelope"></i>
+                                </button>       
+                            </span>
+                        </div>
+                            <ul class="pt-4 row justify-content-center" id="lienssocial">
+                                <li><a href="#" class="fa fa-twitter" target="_blank"></a> </li>
+                                <li><a href="#" class="fab fa-facebook-square" target="_blank"></a> </li>
+                                <li><a href="#" class="fa fa-linkedin" target="_blank"></a></li>
+                                <li><a href="#" class="fa fa-instagram" target="_blank"></a></li>
+                            </ul>  
+                    </div>
+                    <div class="col-12 col-md-3 my-2 pt-3">
+                        <h6 class="text-uppercase font-weight-bold pb-2">notre adresse</h6>
+                        <div id="direccion" class="text-light">
+                            30 Boulevard du Séminaire N. <br/>
+                            Saint-Jean-sur-Richelieu <br/>
+                            QC, J<span class="align-text-top">3</span>B <span class="align-text-top">5</span>J<span class="align-text-top">4</span><br/>
+                            450-555-5555 
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-white-50">
+                    <p>&copy; Alberto Cuellar Risco 2020</p>
+                </div>
             </div>
         </div>
     </footer>
-
-    <!--Scripts-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <script src="https://kit.fontawesome.com/a1f60f9878.js" crossorigin="anonymous"></script>
-
-    <!--Likes et commentaires généré par script (non nécéssaire)-->
-    <script>
-        for (x = 0; x < 24; x = x + 1) {
-            $('.ScriptInsta').eq(x).html(" " + Math.floor((Math.random() * 500) + 1))
-        }
-    </script>
-
-    <!--Date généré par script (non nécéssaire)-->
-    <script>
-        var d = new Date();
-
-        var date = d.getDate();
-
-        var mois = d.getMonth();
-        var moisarr = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
-        mois = moisarr[mois];
-
-        var année = d.getFullYear();
-
-        document.getElementById("ScriptDate").innerHTML = ("<div class='pt-3 position-absolute dateScript'>" + date + "-" + mois + "-" + année + "</div>");
-    </script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
